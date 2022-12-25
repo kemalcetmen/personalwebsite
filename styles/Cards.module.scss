@@ -1,0 +1,76 @@
+@import "./parameters";
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 64rem;
+  padding: 0 2rem;
+  margin: auto;
+  margin-top: 1rem;
+}
+.card {
+  width: 100%;
+  padding: 0.3rem;
+}
+.textframe{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+.texts{
+  font-size: 1.5rem;
+  color: var(--texts2);
+  text-shadow: 0px 0px 3px ;
+}
+.images{
+  position: relative;
+  height: 15vw;
+  max-height: 10rem;
+  width: 100%;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--foreground);
+  justify-content: center;
+  border: 1px solid var(--frames);
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-justify: auto;
+  width: 100%;
+  box-shadow: var(--frames) 0px 0px 9px;
+  color: var(--texts2)
+}
+@media screen and (max-width: $mobile-w-b) {
+  .cards {
+    flex-direction: column;
+    width: 20.5rem;
+    padding: 0;
+    margin-top: 0;
+  }
+  .content{
+    flex-direction: row;
+  }
+  .card {
+    width: 20.5rem;
+    height:9.9rem;
+  }
+  .images{
+    position: relative;
+    height: 9.3rem;
+    width: 14.4rem;
+  }
+  .textframe{
+    width: auto;
+    padding: 1rem;
+  }
+}
+// @media screen and (min-width: $mobile-w-b) and (max-width: $desktop-w-s)  {
+// }

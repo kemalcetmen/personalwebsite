@@ -1,0 +1,28 @@
+@import "./parameters";
+
+.modalframe{
+    display: flex;
+    height: 90vw;
+    width: 90vw;
+    max-width: 27rem;
+    max-height: 27rem;
+    border-radius: 2rem;
+    background-color: var(--background2);
+}
+.deleteframe{
+    width: 100%;
+}
+.delete {
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    border: 0.2rem solid black;
+    border-radius:50%;
+    cursor: pointer;
+}
+@media screen and (max-width: $mobile-w-b) {
+}
