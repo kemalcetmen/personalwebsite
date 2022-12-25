@@ -10,7 +10,6 @@ const Header = () => {
   })
   const resume = 
     <a href="/Kemal_Cetmen_Resume.pdf" download className={ styles.resume }>
-    <div className={ styles.innera }>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392.533 392.533" >
           <g>
             <g>
@@ -53,7 +52,6 @@ const Header = () => {
       <div>
         Download Resume
       </div>
-    </div>
     </a>
   
   return (

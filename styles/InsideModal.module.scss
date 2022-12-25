@@ -99,3 +99,17 @@
     max-width: 21.6rem;
     max-height: 8.8rem;
 }
+.deleteframe{
+    width: 100%;
+}
+.delete {
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    padding: 0.2rem;
+    left: 50%;
+    transform: translate(-50%);
+    border: 0.2rem solid black;
+    border-radius:50%;
+    cursor: pointer;
+}

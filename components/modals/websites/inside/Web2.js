@@ -9,6 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Link from 'next/link'
+import x from "../../../../public/x.svg"
 
 const ResWeb2 = () => {
     const photos = [[1, 1], [1, 2], [2, 3], [2, 4], [3, 5], [3, 6], [4, 7], [4, 8], [5, 9], [5, 10]]
@@ -81,6 +82,14 @@ const ResWeb2 = () => {
                     style={ customStyles }
                     contentLabel="Modal"
                 >
+                    <div onClick={ closeModal } className={ styles.deleteframe }>
+                        <Image
+                            src={ x }
+                            alt=""
+                            width={ 20 }
+                            className={ styles.delete }
+                        />
+                    </div>
                     <div className={ styles.insidemodalframe }>
                         <Swiper
                             modules={ [Navigation, Pagination] }
