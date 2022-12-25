@@ -36,14 +36,14 @@
     padding: 0 1rem;
 }
 .resume {
-    width: 13.621rem;
-    a{
+    .innera{
+        width: 149.88px;
+
         font-size: 1.2rem;
         cursor: pointer;
-        margin: auto;
+        margin: auto ;
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
         svg{
             width: 20px;
             fill: var(--texts);    
@@ -69,11 +69,9 @@
     }
     .resume {
         width: auto;
-        padding: 0.2rem;
-        a{
+        .innera{
             margin: auto;
             font-size: 1rem;
-            justify-content: center;
             svg{
                 width: 18px;
             }
