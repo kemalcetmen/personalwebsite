@@ -43,6 +43,7 @@
         margin: auto;
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
         svg{
             width: 20px;
             fill: var(--texts);    
@@ -67,11 +68,12 @@
         text-align: start;
     }
     .resume {
-        display: flex;
         width: auto;
         padding: 0.2rem;
         a{
+            margin: auto;
             font-size: 1rem;
+            justify-content: center;
             svg{
                 width: 18px;
             }
