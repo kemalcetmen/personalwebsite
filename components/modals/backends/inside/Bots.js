@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import telegram from "../../../../public/social/telegram.svg"
 import discord from "../../../../public/social/discord.svg"
+import flightbot from "../../../../public/bots/flightbot.jpg"
 import styles from "../../../../styles/InsideModal.module.scss";
+import Link from 'next/link'
 
 const Serverbots = () => {
     const [telegramOpen, setTelegramOpen] = useState(false)
@@ -24,32 +26,30 @@ const Serverbots = () => {
                         alt=""
                         width={ 80 }
                     /> :
-                    <div className={ styles.botProjects }>
+                    <Link href={ "https://t.me/flight_warning_bot" }>
                         <Image
-                            src={ discord }
+                            src={ flightbot }
                             alt=""
                             width={ 80 }
                         />
-                    </div>
+                    </Link>
                 }
                 { !discordOpen
                     ?
                     <Image
-                        onClick={ () => { setDiscordOpen(true) } }
+                        // onClick={ () => { setDiscordOpen(true) } }
                         src={ discord }
                         alt=""
                         width={ 80 }
+                        title="sorry there is no discord bot yet"
                     /> :
-                    <div className={ styles.botProjects }>
-                        <Image
-                            src={ telegram }
-                            alt=""
-                            width={ 80 }
-                        />
-                    </div>
+                    <Image
+                        src={ telegram }
+                        alt=""
+                        width={ 80 }
+                    />
                 }
             </div>
-
         </div>
     )
 }
